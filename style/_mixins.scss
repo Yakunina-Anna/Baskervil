@@ -1,0 +1,232 @@
+@mixin heading-1 {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 64px;
+     line-height: 82px;
+     text-transform: uppercase;
+}
+
+
+
+@mixin heading-2 {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 48px;
+     line-height: 64px;
+     text-transform: uppercase;
+}
+
+
+@mixin heading-2__tablet {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 40px;
+     line-height: 56px;
+     text-transform: uppercase;
+}
+
+//HEADING4
+@mixin heading-3 {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 32px;
+     line-height: 44px;
+     text-transform: uppercase;
+}
+
+
+//headin5
+@mixin heading-4 {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 28px;
+     text-transform: uppercase;
+}
+
+@mixin heading-5 {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 20px;
+     text-transform: uppercase;
+}
+
+
+@mixin label-1 {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 19px;
+     text-transform: uppercase;
+}
+
+@mixin label-2 {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 19px;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+// label-2
+
+@mixin label-3 {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 21px;
+}
+
+//label-3
+
+
+@mixin cap {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 12px;
+     line-height: 14px;
+     text-transform: uppercase;
+}
+
+@mixin text-main {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+}
+
+@mixin text-button {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 16px;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+
+@mixin tagline {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 36px;
+}
+
+
+@mixin flex-column {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+@mixin flex-string {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+// @mixin title-h1 {
+//      font-weight: 900;
+//      font-size: 125px;
+//      line-height: 110%;
+//      font-family: 'Playfair Display',
+//      serif
+// }
+// @mixin title-h2 {
+//      font-weight: 900;
+//      font-size: 39px;
+//      line-height: 120%;
+//      font-family: 'Playfair Display',
+//      serif
+// }
+
+// @mixin title-h3 {
+//      font-weight: 400;
+//      font-size: 27px;
+//      line-height: 110%;
+// }
+
+// @mixin subtitle1 {
+//      font-weight: 500;
+//      font-size: 28px;
+//      line-height: 120%;
+// }
+
+// @mixin subtitle2 {
+//      font-weight: 500;
+//      font-size: 23px;
+//      line-height: 149%;
+// }
+
+// @mixin subtitle3 {
+//      font-weight: 500;
+//      font-size: 20px;
+//      line-height: 149%;
+// }
+
+// @mixin main {
+//      font-weight: 400;
+//      font-size: 21px;
+//      line-height: 130%;
+// }
+
+// @mixin small {
+//      font-weight: 400;
+//      font-size: 17px;
+//      line-height: 120%;
+// }
+
+// @mixin xs {
+//      font-weight: 400;
+//      font-size: 14px;
+//      line-height: 120%;
+// }
+// @mixin h1mob{
+//      font-family: 'Playfair Display',
+//      serif;
+//      font-weight: 900;
+//      font-size: 56px;
+//      line-height: 120%;
+// }
+// @mixin h2mob{
+//      font-family: 'Playfair Display',
+//      serif;
+//      font-weight: 900;
+//      font-size: 32px;
+//      line-height: 100%;
+// }
+// @mixin h3mob{
+//      font-weight: 400;
+//      font-size: 18px;
+//      line-height: 120%;
+// }
+// @mixin subtitle2mob{
+//      font-weight: 500;
+//      font-size: 18px;
+//      line-height: 130%;
+// }
+// @mixin mainmob{
+//      font-weight: 400;
+//      font-size: 16px;
+//      line-height: 130%;
+// }
+// @mixin smallmob{
+//      font-weight: 400;
+//      font-size: 14px;
+//      line-height: 120%;
+// }
+// @mixin sub1mob{
+//      font-weight: 500;
+//      font-size: 21px;
+//      line-height: 110%;
+// }
+// @mixin xsmob{
+//      font-weight: 400;
+//      font-size: 12px;
+//      line-height: 120%;
+// }
+// @mixin shadowMob{
+//      filter: drop-shadow(0px 5px 20px -1px rgba(22, 164, 1, 0.25));
+// }

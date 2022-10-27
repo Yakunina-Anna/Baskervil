@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baskervil</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <div class="header__inner main-padding">
+                <div class="header__logo">
+
+                    <img class="header__logo-img" src="./images/logo.png" alt="logo">
+
+                </div>
+
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="menu-link" href="#">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="menu-link" href="#">О зале</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="menu-link " href="#">Услуги</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="menu-link" href="#">наши специалисты</a>
+                        </li>
+
+
+                    </ul>
+                    <div class="burger"><span></span></div>
+                </nav>
+                <a href="#" class="button button__nav">Контакты</a>
+                <div class="burger__menu">
+                    <div class="burger__wrapper">
+                        <div class="burger__header">
+                            <div class="burger__inner">
+                                <div class="burger__logo">
+                                    <img class="header__logo-img" src="./image/logo/logofornight.svg" alt="">
+                                </div>
+                                <p class="burger__title">Фитнес-тренер<br>
+                                    Яна Лебедева</p>
+                            </div>
+                            <div class="adaptiv-close burger__close">
+                            </div>
+                        </div>
+                        <div class="burger__main">
+                            <nav class="burger__content">
+                                <ul class="burger__list">
+                                    <li class="burger__item">
+                                        <a href="#" class="burger__item-link">Главная</a>
+                                        <ul class="burger__sublist">
+                                            <li class="burger__subitem">
+                                                <a href="#principles" class="buger__subitem-link">Мои принципы</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="burger__item">
+                                        <a href="./about.html" class="burger__item-link">О тренере</a>
+                                        <ul class="burger__sublist">
+                                            <li class="burger__subitem">
+                                                <a href="./about.html#about-todes" class="buger__subitem-link">Моя
+                                                    фитнес история</a>
+                                            </li>
+                                            <li class="burger__subitem">
+                                                <a href="./about.html#education"
+                                                    class="buger__subitem-link">Сертификаты</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="burger__item">
+                                        <a href="./blogs.html" class="burger__item-link">Блог</a>
+                                        <ul class="burger__sublist">
+                                            <li class="burger__subitem">
+                                                <a href="./blogs.html" class="buger__subitem-link">Полезные
+                                                    статьи</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="burger__item">
+                                        <a href="#questions" class="burger__item-link">Услуги</a>
+                                        <ul class="burger__sublist">
+                                            <li class="burger__subitem">
+                                                <a href="#questions" class="buger__subitem-link">Какие тренировки я
+                                                    даю</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="burger__item">
+                                        <a href="#price" class="burger__item-link">стоимость</a>
+                                    </li>
+                                    <li class="burger__item">
+                                        <a href="#reviews" class="burger__item-link">Отзывы</a>
+                                    </li>
+
+                                    <li class="burger__item">
+                                        <a href="#contacts" class="burger__item-link">контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="seti-links burger__seti-link">
+                                <a href="https://vk.com/yanchik_lebedeva" class="contacts__link-item">
+                                    <svg class="icon-white icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M26.1462 0H13.8742C2.66624 0 0.000244141 2.666 0.000244141 13.854V26.126C0.000244141 37.332 2.64624 40 13.8542 40H26.1262C37.3322 40 40.0002 37.354 40.0002 26.146V13.874C40.0002 2.666 37.3542 0 26.1462 0ZM32.2922 28.54H29.3742C28.2702 28.54 27.9382 27.646 25.9582 25.666C24.2302 24 23.5002 23.792 23.0622 23.792C22.4582 23.792 22.2922 23.958 22.2922 24.792V27.416C22.2922 28.126 22.0622 28.542 20.2082 28.542C18.4089 28.4211 16.6641 27.8744 15.1174 26.9471C13.5708 26.0197 12.2666 24.7382 11.3122 23.208C9.04658 20.388 7.47013 17.0783 6.70825 13.542C6.70825 13.104 6.87425 12.708 7.70825 12.708H10.6242C11.3742 12.708 11.6442 13.042 11.9382 13.812C13.3542 17.98 15.7702 21.604 16.7502 21.604C17.1262 21.604 17.2902 21.438 17.2902 20.5V16.208C17.1662 14.25 16.1262 14.084 16.1262 13.376C16.1396 13.1893 16.2252 13.0151 16.3648 12.8904C16.5045 12.7657 16.6872 12.7002 16.8742 12.708H21.4582C22.0842 12.708 22.2922 13.02 22.2922 13.77V19.562C22.2922 20.188 22.5622 20.396 22.7502 20.396C23.1262 20.396 23.4162 20.188 24.1042 19.5C25.582 17.6979 26.7893 15.6902 27.6882 13.54C27.7801 13.2817 27.954 13.0606 28.1833 12.9104C28.4126 12.7602 28.6848 12.6891 28.9582 12.708H31.8762C32.7502 12.708 32.9362 13.146 32.7502 13.77C31.6892 16.1469 30.3764 18.4031 28.8342 20.5C28.5202 20.98 28.3942 21.23 28.8342 21.792C29.1242 22.23 30.1462 23.084 30.8342 23.896C31.8341 24.8933 32.6643 26.0471 33.2922 27.312C33.5422 28.124 33.1242 28.542 32.2922 28.542V28.54Z" />
+                                    </svg>
+                                </a>
+
+                            </div>
+                            <div class="burger__tel burger__contact">
+                                <img src="./image/icon/call.svg" alt="tel">
+                                <a href="tel:+79306698991" class="burger__tel-item">8 (930) 669-89-91</a>
+                            </div>
+                            <div class="burger__mail burger__contact">
+                                <img src="./image/icon/mail-mini.svg" alt="mail">
+                                <a href="mailto:yanchiklebedeva1991@mail.ru"
+                                    class="burger__mail-item">yanchiklebedeva1991@mail.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="main">
+            <section class="heading main-margin">
+                <div class="heading__inner ">
+                    <h4 class="heading__subtitle">учебно - тренировочный зал для собак</h4>
+                    <h1 class="heading__title">Баскервиль</h1>
+                    <div class="heading__text">
+                        <div class="heading__line"></div>
+                        <p class="text-label">дрессировка, аренда зала, тренировки с собаками
+                            <!-- Аренда Дрессировка Фистнес для собак Хендлинг -->
+                        </p>
+                    </div>
+                    <a href="#" class=" button button__primary">Подробнее о зале</a>
+
+                </div>
+            </section>
+            <section class="about main-margin">
+                <p class="subtitle">история учебно-тренировчного зала</p>
+                <h2 class="title about__title">Почему баскервиль ?</h2>
+                <div class="about__items">
+                    <div class="about__item">
+                        <div class="about__item-logo">
+                            <img src="./images/about_logo1.png" alt="">
+                        </div>
+                        <h5 class="about__item-title">Создание!!!!</h5>
+                        <p class="text about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-logo">
+                            <img src="./images/about_logo2.png" alt="">
+                        </div>
+                        <h5 class="about__item-title">уникальные программы тренировок</h5>
+                        <p class="text about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-logo">
+                            <img src="./images/about_logo3.png" alt="">
+                        </div>
+                        <h5 class="about__item-title">Специализированное оборудование</h5>
+                        <p class="text about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="rent main-margin">
+                <p class="subtitle">зал - это место душевных встреч</p>
+                <h2 class="title rent__title">аренда зала</h2>
+                <p class="text rent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="#" class=" button button__primary">оформить аренду зала</a>
+                <div class="rent__items">
+                    <div class="rent__item">
+                        <img src="" alt="">
+                        123
+                    </div>
+                    <div class="rent__item">
+                        <img src="" alt="">
+                        321
+                    </div>
+                    <div class="rent__item">
+                        <img src="" alt="">
+                        123
+                    </div>
+                </div>
+                <div class="rent__content">
+                    <p class="subtitle">напиши или позвони нам</p>
+                    <h4 class="rent__content-title">Связаться через :</h4>
+                    <div class="socials">
+                        <a class="socials__link" href="https://wa24.site/79081591910">
+                            <img src="./images/socials/Whats-app.svg" alt="Whats-app">
+                            <p class="text">Whats app</p>
+                        </a>
+
+                        <a class="socials__link" href="https://viber.click/79081591910">
+                            <img src="./images/socials/Viber.svg" alt="Viber">
+                            <p class="text">Viber</p>
+                        </a>
+
+                        <a class="socials__link" href="https://t.me/Baskervilnn">
+                            <img src="./images/socials/Telegram.svg" alt="Telegram">
+                            <p class="text">Telegram</p>
+                        </a>
+                    </div>
+                    <!-- <p class="text rent__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p> -->
+                    <a href="tel:+79081591910" class="rent__content-phone"> или позвонить: +7 (908) 159-19-10</a>
+                </div>
+            </section>
+            <section class="services main-margin">
+                <div class="services__inner ">
+                    <p class="subtitle">УЧЕБНО - ТРЕНИРОВОЧНАЯ ПЛОЩАДКА</p>
+                    <h2 class="title services__title">услуги в зале</h2>
+                    <div class="services__items">
+                        <div class="services__item">
+                            <div class="services__item-inner">
+                                <div class="services__item-images">
+                                    <img class="services__item-img" src="./images/image.jpg" alt="">
+
+                                </div>
+                                <div class="services__item-content">
+                                    <h5 class="services__item-title">Дрессировка собак</h5>
+                                    <p class="text services__item-text">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Est,
+                                        doloremque.</p>
+                                    <a href="./training-1.html" class="button button__card ">подробнее об услуге</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-inner">
+                                <div class="services__item-images">
+                                    <img class="services__item-img" src="./images/image.jpg" alt="">
+
+                                </div>
+                                <div class="services__item-content">
+                                    <h5 class="services__item-title">хендлинг</h5>
+                                    <p class="text services__item-text">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Est,
+                                        doloremque.</p>
+                                    <a href="" class="button button__card ">подробнее об услуге</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-inner">
+                                <div class="services__item-images">
+                                    <img class="services__item-img" src="./images/image.jpg" alt="">
+
+                                </div>
+                                <div class="services__item-content">
+                                    <h5 class="services__item-title">фитнес для собак</h5>
+                                    <p class="text services__item-text">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Est,
+                                        doloremque.</p>
+                                    <a href="" class="button button__card ">подробнее об услуге</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-inner">
+                                <div class="services__item-images">
+                                    <img class="services__item-img" src="./images/image.jpg" alt="">
+
+                                </div>
+                                <div class="services__item-content">
+                                    <h5 class="services__item-title">реабилитация</h5>
+                                    <p class="text services__item-text">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Est,
+                                        doloremque.</p>
+                                    <a href="" class="button button__card ">подробнее об услуге</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-inner">
+                                <div class="services__item-images">
+                                    <img class="services__item-img" src="./images/image.jpg" alt="">
+
+                                </div>
+                                <div class="services__item-content">
+                                    <h5 class="services__item-title">физ. подготовка </h5>
+                                    <p class="text services__item-text">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Est,
+                                        doloremque.</p>
+                                    <a href="" class="button button__card ">подробнее об услуге</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-inner">
+                                <div class="services__item-images">
+                                    <img class="services__item-img" src="./images/image.jpg" alt="">
+
+                                </div>
+                                <div class="services__item-content">
+                                    <h5 class="services__item-title">танцы с собакой</h5>
+                                    <p class="text services__item-text">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Est,
+                                        doloremque.</p>
+                                    <a href="" class="button button__card ">подробнее об услуге</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-inner">
+                                <div class="services__item-images">
+                                    <img class="services__item-img" src="./images/image.jpg" alt="">
+
+                                </div>
+                                <div class="services__item-content">
+                                    <h5 class="services__item-title">ноузворк</h5>
+                                    <p class="text services__item-text">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Est,
+                                        doloremque.</p>
+                                    <a href="" class="button button__card ">подробнее об услуге</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-inner">
+                                <div class="services__item-images">
+                                    <img class="services__item-img" src="./images/image.jpg" alt="">
+
+                                </div>
+                                <div class="services__item-content">
+                                    <h5 class="services__item-title">Аджилити</h5>
+                                    <p class="text services__item-text">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Est,
+                                        doloremque.</p>
+                                    <a href="" class="button button__card ">подробнее об услуге</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+            </section>
+            <section class="specialists main-margin">
+                <p class="subtitle"> собаки прекрасно умеют разговаривать, но лишь с теми, кто умеет их слушать</p>
+                <h2 class="title specialists__title">наши специалисты</h2>
+                <div class="specialists__items">
+                    <div class="specialists__item">
+                        <div class="specialists__item-content">
+                            <h4 class="specialists__item-title">Анастасия Величковская</h4>
+                            <p class="subtitle specialists__item-subtitle">Основатель зала, профессиональный кинолог,
+                                инструктор по дрессировке
+                                собак и физ. подготовке</p>
+                            <p class="text specialists__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit.
+                            </p>
+                        </div>
+                        <div class="specialists__image"><img src="./images/photo_2022-10-12_19-39-29 (2).jpg" alt=""
+                                class="specialists__item-img"></div>
+                    </div>
+                    <div class="specialists__item">
+                        <div class="specialists__image">
+                            <img src="./images/photo_2022-10-12_19-39-29 (2).jpg" alt="" class="specialists__item-img">
+                        </div>
+                        <div class="specialists__item-content">
+                            <h4 class="specialists__item-title">Наталья Павлычева</h4>
+                            <p class="subtitle specialists__item-subtitle">Основатель питомника, фитнес инструктор,
+                                массажист, профессиональный хендлер</p>
+                            <p class="text specialists__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="specialists__item">
+                        <div class="specialists__item-content">
+                            <h4 class="specialists__item-title">Степан </h4>
+                            <p class="subtitle specialists__item-subtitle">профессиональный хендлер, фитнес инструктор
+                            </p>
+                            <p class="text specialists__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit.
+                            </p>
+                        </div>
+                        <div class="specialists__image"><img src="./images/photo_2022-10-12_19-39-29 (2).jpg" alt=""
+                                class="specialists__item-img"></div>
+                    </div>
+                    <div class="specialists__item">
+                        <div class="specialists__image">
+                            <img src="./images/photo_2022-10-12_19-39-29 (2).jpg" alt="" class="specialists__item-img">
+                        </div>
+                        <div class="specialists__item-content">
+                            <h4 class="specialists__item-title">Валерия Толстикова</h4>
+                            <p class="subtitle specialists__item-subtitle">профессиональный хендлер</p>
+                            <p class="text specialists__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="specialists__item">
+                        <div class="specialists__item-content">
+                            <h4 class="specialists__item-title">Оксана Курина</h4>
+                            <p class="subtitle specialists__item-subtitle">профессиональный хендлер, фитнес инструктор
+                            </p>
+                            <p class="text specialists__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit.
+                            </p>
+                        </div>
+                        <div class="specialists__image"><img src="./images/photo_2022-10-12_19-39-29 (2).jpg" alt=""
+                                class="specialists__item-img"></div>
+                    </div>
+                    <div class="specialists__item">
+                        <div class="specialists__image">
+                            <img src="./images/photo_2022-10-12_19-39-29 (2).jpg" alt="" class="specialists__item-img">
+                        </div>
+                        <div class="specialists__item-content">
+                            <h4 class="specialists__item-title">Алла Лаврова</h4>
+                            <p class="subtitle specialists__item-subtitle">фитнес инструктор, тренер по аджилити,
+                                основатель школы ЛакиДог</p>
+                            <p class="text specialists__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="specialists__item">
+                        <div class="specialists__item-content">
+                            <h4 class="specialists__item-title">Анастасия Адкина</h4>
+                            <p class="subtitle specialists__item-subtitle">профессиональный тренер по танцам с собаками,
+                                профессиональный хендлер, оснвоатель школы...
+                            </p>
+                            <p class="text specialists__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit.
+                            </p>
+                        </div>
+                        <div class="specialists__image"><img src="./images/photo_2022-10-12_19-39-29 (2).jpg" alt=""
+                                class="specialists__item-img"></div>
+                    </div>
+                    <div class="specialists__item">
+                        <div class="specialists__image">
+                            <img src="./images/photo_2022-10-12_19-39-29 (2).jpg" alt="" class="specialists__item-img">
+                        </div>
+                        <div class="specialists__item-content">
+                            <h4 class="specialists__item-title">Александр Полетаев</h4>
+                            <p class="subtitle specialists__item-subtitle">профессиональный кинолог, специалист по
+                                дисциплине НоузВорк</p>
+                            <p class="text specialists__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <section class="contacts main-margin">
+                <p class="subtitle">!!!!</p>
+                <h2 class="title contacts__title">контакты</h2>
+                <div class="contacts__inner">
+                    <div class="contacts__content">
+                        <div class="contacts__content-item">
+                            <p class="contacts__content-subtitle">Адрес:</p>
+                            <h5 class="contacts__content-title">ул. Сормовское ш., 24Р1<br>г. Нижний Новгород
+                            </h5>
+                        </div>
+                        <div class="contacts__content-item">
+                            <p class="contacts__content-subtitle">Телефон для записи</p>
+                            <h5 class="contacts__content-title">
+                                <a href="tel:+79081591910" class="contacts__content-tel">
+                                    +7 (908) 159-19-10
+                                </a>
+                            </h5>
+                            <div class="socials contacts__socials">
+                                <a class="socials__link" href="https://wa24.site/79081591910">
+                                    <img src="./images/socials/Whats-app.svg" alt="Whats-app">
+                                    <p class="text">Whats app</p>
+                                </a>
+
+                                <a class="socials__link" href="https://viber.click/79081591910">
+                                    <img src="./images/socials/Viber.svg" alt="Viber">
+                                    <p class="text">Viber</p>
+                                </a>
+
+                                <a class="socials__link" href="https://t.me/Baskervilnn">
+                                    <img src="./images/socials/Telegram.svg" alt="Telegram">
+                                    <p class="text">Telegram</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contacts__content-item">
+                            <p class="contacts__content-subtitle">Рeжим работы:</p>
+                            <p class="text">
+                                7:00-23:30<br>Каждый день без выходных
+
+                            </p>
+                        </div>
+                        <a href="tel:+79081591910" class="button button__secondary">позвонить</a>
+
+
+                    </div>
+                    <div class="contacts__image"></div>
+                </div>
+                <div class="contacts__map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac8f2e37b8699a930fb7d8485eac5a71bf36ede61c738a9f3049ac61b2c675fab&amp;source=constructor"
+                        width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+
+            </section>
+
+        </main>
+        <footer class="footer main-padding">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <h4 class="footer__logo-title">баскервиль</h4>
+                    <p class="footer__logo-subtitle">УЧЕБНО - ТРЕНИРОВОЧНАЯ ПЛОЩАДКА для собак</p>
+                </div>
+                <div class="footer__nav">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="menu-link" href="#">Главная</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="menu-link" href="#">О зале</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="menu-link " href="#">Услуги</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="menu-link" href="#">наши специалисты</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <ul>
+                        <li>+7 (908) 159-19-10</li>
+                        <li>ул. Сормовское ш., 24, корп. 2,<br>г. Нижний Новгород</li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

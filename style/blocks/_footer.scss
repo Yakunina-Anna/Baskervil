@@ -1,0 +1,28 @@
+.footer {
+    background-color: $black-color;
+    color: $white-color;
+
+    &__inner {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        @include flex-string;
+    }
+
+    &__logo-title {
+        @include heading-3;
+        margin-bottom: 16px;
+    }
+
+    &__logo-subtitle {
+        @include cap
+    }
+
+    &__nav {
+        @include label-3;
+        text-transform: uppercase;
+
+        li:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+}
