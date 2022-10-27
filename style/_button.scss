@@ -1,0 +1,73 @@
+.button {
+    cursor: pointer;
+    @include text-button;
+
+
+    &__primary {
+        color: $black-color;
+        padding: 24px 64px;
+        transition: all .4s ease;
+        background-color: $primary-color;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: $primary-hover;
+        }
+
+        &:active {
+            background-color: $light-color;
+        }
+    }
+
+    &__secondary {
+        color: $white-color;
+        padding: 24px 64px;
+        transition: all .4s ease;
+        background-color: $black-color;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+
+        &:active {
+            background-color: $primary-hover;
+        }
+    }
+
+    &__nav {
+        color: $black-color;
+        padding: 20px 48px;
+        transition: all .4s ease;
+        background-color: $primary-color;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: $primary-hover;
+        }
+
+        &:active {
+            background-color: $light-color;
+        }
+    }
+
+    &__card {
+        color: $black-color;
+        // padding: 24px auto;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 100%;
+
+        transition: all .4s ease;
+        background-color: $primary-color;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: $primary-hover;
+        }
+
+        &:active {
+            background-color: $light-color;
+        }
+    }
+}

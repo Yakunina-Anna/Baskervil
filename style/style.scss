@@ -1,0 +1,165 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html,
+body {
+
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    min-width: 320px;
+    overflow-anchor: none;
+
+
+}
+
+section {
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    color: inherit;
+    /* наследование цвета от родителя */
+}
+
+input {
+    outline: none;
+}
+
+@media (min-width:800px) and (max-width:1100px) {
+    section {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+//Переменные 
+@import "./_var.scss";
+
+// Примеси Миксины
+@import "./_mixins.scss";
+
+// button
+@import "./_button";
+
+@import "./_main.scss";
+@import "./blocks/_header";
+@import "./blocks/_burger";
+
+@import "./blocks/_heading";
+
+@import "./blocks/_about";
+
+@import "./blocks/_rent";
+
+@import "./blocks/_services";
+
+@import "./blocks/_contacts";
+@import "./blocks/_specialists";
+
+@import "./blocks/_footer";
+
+@import "./training/training";
