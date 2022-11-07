@@ -114,7 +114,12 @@ button {
     box-sizing: border-box;
 }
 
+svg path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: inherit;
 
+}
 
 a {
     text-decoration: none;
@@ -146,6 +151,8 @@ input {
 @import "./_button";
 
 @import "./_main.scss";
+// burger-menu
+@import "./blocks/burger";
 @import "./blocks/_header";
 @import "./blocks/_burger";
 

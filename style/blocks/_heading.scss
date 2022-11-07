@@ -39,3 +39,22 @@
     height: 300px;
     border-bottom: 4px solid $primary-color;
 }
+
+@media(min-width:800px) and (max-width:1100px) {
+
+    .heading {
+        &__inner {
+            padding-top: 78px;
+            padding-bottom: 78px;
+            color: $white-color;
+        }
+
+        &__title {
+            padding-bottom: 64px;
+        }
+    }
+
+
+
+
+}
